@@ -1,30 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <div>
-    <Button type="primary">Primary Button</Button>
-    <Button>Default Button</Button>
-    <Button type="dashed">Dashed Button</Button>
+  <div class="container">
+    <div class="left-menu"> 
+      Left menu
+    </div> 
+    <Header/>
   </div>
 </template>
 
 <script>
-import { Button } from "ant-design-vue";
+import Header from './components/Header.vue';
 
 export default {
   name: 'App',
   components: {
-    Button
+    Header
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.container {
+  display: flex
+}
+.left-menu {
+  width: 290px ;
+  background-color: black;
+  height: 400px;
 }
 </style>
