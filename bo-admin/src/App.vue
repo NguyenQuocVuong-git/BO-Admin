@@ -1,26 +1,38 @@
 <template>
-  <a-layout style="min-height: 100vh">
-    <Sider />
-    <a-layout>
-      <!-- header -->
-      <Content />
-      <Footer />
-      <FloatButton />
-    </a-layout>
-  </a-layout>
+  <div class="container">
+    <div class="left-menu"> 
+      <Sider />
+    </div> 
+    <Header/>
+  </div>
 </template>
 
-<script setup>
+<script>
+import Header from './components/Header.vue';
 import Sider from "./components/Sider.vue";
-import Footer from "./components/Footer.vue";
-import Content from "./components/Content.vue";
-import FloatButton from "./components/FloatButton.vue";
+
+export default {
+  name: 'App',
+  components: {
+    Header,
+    Sider
+  }
+}
 </script>
 <style>
-.site-layout .site-layout-background {
-  background: #fff;
+#app {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
-[data-theme="dark"] .site-layout .site-layout-background {
-  background: #141414;
+.container {
+  display: flex
+}
+.left-menu {
+  width: 290px ;
+  background-color: black;
+  height: 400px;
 }
 </style>
