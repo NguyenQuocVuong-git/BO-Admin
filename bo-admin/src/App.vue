@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="left-menu"> 
-      Left menu
+      <Sider />
     </div> 
     <Header/>
   </div>
@@ -9,15 +9,16 @@
 
 <script>
 import Header from './components/Header.vue';
+import Sider from "./components/Sider.vue";
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Sider
   }
 }
 </script>
-
 <style>
 #app {
   font-family: 'Roboto', sans-serif;
