@@ -16,6 +16,7 @@
     "@ant-design/icons-vue": "^7.0.1",
     "ant-design-vue": "4.0.8",
     "core-js": "3.8.3",
+    "typeface-roboto": "^1.1.13",
     "vue": "3.2.13"
   },
   "devDependencies": {

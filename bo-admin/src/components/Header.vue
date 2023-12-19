@@ -45,7 +45,7 @@ const handleSwitchMode = (checked) => {
     flex: 1;
     gap: 20px;
     max-height: 60px;
-    padding: 0px 24px;
+    padding: 16px 24px;
     align-items: center;
     background-color: white;
     justify-content: flex-end;
@@ -62,8 +62,8 @@ const handleSwitchMode = (checked) => {
     background-color: #eff4fb;
     padding: 8px;
     border-radius: 50px;
-    height: 20px;
-    width: 20px;
+    height: 36px;
+    width: 36px;
     font-size: 18px;
     cursor: pointer;
 }
@@ -79,10 +79,12 @@ const handleSwitchMode = (checked) => {
     display: block;
     font-size: 14px;
     color: black;
+    line-height: 1.25rem;
 }
 
 .job {
     font-size: 12px;
+    line-height: 1.25rem;
 }
 
 .button-switch>>>.ant-switch-handle {
