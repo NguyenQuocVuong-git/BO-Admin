@@ -16,10 +16,7 @@
   </a-float-button-group>
 </template>
 <script>
-import {
-  CustomerServiceOutlined,
-  CommentOutlined,
-} from "@ant-design/icons-vue";
+
 export default {
   name: "FloatButton",
   components: {

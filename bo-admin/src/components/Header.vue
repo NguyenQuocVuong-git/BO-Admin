@@ -1,9 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import {
-    BellOutlined,
-    UserOutlined
-} from "@ant-design/icons-vue";
+
 import IconSun from '../assets/images/sun-icon.svg';
 import IconNight from '../assets/images/night-icon.svg'
 
