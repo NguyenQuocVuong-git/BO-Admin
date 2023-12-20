@@ -1,8 +1,7 @@
 <script setup>
-import { ref } from 'vue';
-import Header from './components/Header.vue';
-// import Sider from "./components/Sider.vue";
-import store from './store/store';
+  import { ref } from 'vue';
+  import Header from './layouts/Header.vue';
+  import store from './store/store';
 
 const isLogin = ref(!!store.getters.user.id);
 
@@ -13,7 +12,7 @@ const isLogin = ref(!!store.getters.user.id);
       <div>
         <!-- <Sider /> -->
       </div>
-      <div class="right-menu">
+      <div>
         <Header />
         <router-view />
       </div>
@@ -33,12 +32,5 @@ const isLogin = ref(!!store.getters.user.id);
   color: #2c3e50;
 }
 
-.container {
-  display: flex;
-  background-color: #F5F5F5;
-}
 
-.right-menu {
-  flex: 1;
-}
 </style>
