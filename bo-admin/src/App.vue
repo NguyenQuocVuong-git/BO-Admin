@@ -1,5 +1,5 @@
 <template>
-  <a-layout style="min-height: 100vh">
+  <!-- <a-layout style="min-height: 100vh">
     <Sider />
     <a-layout>
       <a-layout-header class="custom-layout-header" style="background-color: white;padding: 0;">
@@ -7,7 +7,16 @@
       </a-layout-header>
 
     </a-layout>
-  </a-layout>
+  </a-layout> -->
+  <div class="container">
+    <div>
+      <Sider />
+    </div>
+    <div>
+      <Header />
+      <router-view />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -30,8 +39,7 @@ export default {
   color: #2c3e50;
 }
 
-.custom-layout-header {
-  line-height: 0px !important;
-  height: unset;
+.container {
+  display: flex;
 }
 </style>
