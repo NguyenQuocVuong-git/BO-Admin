@@ -3,10 +3,9 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router/router';
 import store from './store/store';
-import Antd from "ant-design-vue";
+import './index.css'
 
 createApp(App)
-    .use(Antd)
     .use(router)
     .use(store)
     .mount('#app');
