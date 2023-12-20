@@ -1,7 +1,12 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import 'typeface-roboto';
+
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router/router';
+import store from './store/store';
 import Antd from "ant-design-vue";
 
-const app = createApp(App);
-app.use(Antd).mount("#app");
+createApp(App)
+    .use(Antd)
+    .use(router)
+    .use(store)
+    .mount('#app');
