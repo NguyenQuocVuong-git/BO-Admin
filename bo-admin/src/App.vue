@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import Header from './components/Header.vue';
-// import Sider from "./components/Sider.vue";
+import Sider from "./components/Sider.vue";
 import store from './store/store';
 
 const isLogin = ref(!!store.getters.user.id);
@@ -11,7 +11,7 @@ const isLogin = ref(!!store.getters.user.id);
 <template>
   <div v-if='isLogin' class="container">
       <div>
-        <!-- <Sider /> -->
+        <Sider />
       </div>
       <div class="right-menu">
         <Header />
