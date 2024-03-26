@@ -14,5 +14,5 @@
 export default {
   name: "ContentBo",
 };
-console.log('sssssssss')
+console.log('aaaaaaaaaaaa')
 </script>
